@@ -6,7 +6,9 @@ const adRoutes = require('./router/adRoutes');
 const commentRoutes = require('./router/commentRoutes')
 const {db} = require('./connection')
 
-app.use(cors())
+app.use(cors({
+  origin:"*"
+}))
 app.use(express.json());
 
 app.use('/ad',adRoutes)
