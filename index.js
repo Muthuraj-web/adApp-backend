@@ -6,10 +6,7 @@ const adRoutes = require('./router/adRoutes');
 const commentRoutes = require('./router/commentRoutes')
 const {db} = require('./connection')
 
-app.use(cors({
-  origin:"https://adapp-frontend.herokuapp.com/",
-  optionsSuccessStatus: 200
-  ))
+app.use()
 app.use(express.json());
 
 app.use('/ad',adRoutes)
