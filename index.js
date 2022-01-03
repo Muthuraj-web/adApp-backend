@@ -4,6 +4,7 @@ const cors = require('cors');
 const authRoutes = require('./router/authRoutes');
 const adRoutes = require('./router/adRoutes');
 const commentRoutes = require('./router/commentRoutes')
+const {db} = require('./connection')
 
 app.use(cors())
 app.use(express.json());
